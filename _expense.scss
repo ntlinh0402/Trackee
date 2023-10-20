@@ -1,0 +1,165 @@
+body{
+  background-color: $green;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10rem;
+}
+.expensesForm,  .incomesForm{
+  
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 3rem;
+  padding-right: 20px;
+  #list-expenses,#list-incomes{
+    
+    
+     
+    li{
+    width: 100%;
+    border-radius: 15px;
+      width: 100%;
+      background-color: white;
+      border-radius: 15px;
+      margin: 15px 0;
+      display: flex;
+      justify-content: space-between;
+
+      padding: 10px 20px 7px 30px;
+      position: relative;
+    }
+    
+  }
+}
+
+
+.create-form 
+{
+  #description{
+    width: 330px;
+  }
+  input{
+    display: flex;
+    justify-content: space-around;
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    outline: none;
+    margin-left: 20px ;
+    
+  }
+  #cost{
+    width: 70px;
+    text-align: center;
+  }
+}
+.input__area {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  
+}
+.float{
+  width: 50%;
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 500px;
+}
+#expense_list_cost{
+  
+}
+.far{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(11, 3, 3);
+  background-color: $red;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  cursor: pointer;
+  transform: translateX(30px);
+  opacity: 0;
+}
+
+li:hover .far{
+  animation: showDelete;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+.fa-trash-alt::before {
+  content: "";
+}
+.fa, .far, .fas {
+  font-family: "Font Awesome 5 Free";
+}
+.fab, .far {
+  font-weight: 400;
+}
+.fa, .fab, .fad, .fal, .far, .fas {
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+user agent stylesheet
+i {
+  font-style: italic;
+}
+@keyframes showDelete{
+  0%{
+      transform: translateX(30px);
+      opacity: 0;
+  }
+  100%{
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+.deleteBtn{
+  border: none;
+}
+.budget__numbers{
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  max-width: 700px;
+  margin: 1rem 0 3rem;
+  
+}
+.number{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.amount__container{
+  display: flex;
+}
+
+
+////////
+#add__income{background-color: $green}
+#add__expense{background-color: var(--red);}
+.budget__numbers{
+  
+  position: relative;
+    left: 70px;
+    top: 12px;
+}
+.budget__numbers{
+justify-content: space-between;
+}

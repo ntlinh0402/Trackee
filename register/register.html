@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Final/style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <form action="" id="register" class="form">
+        <h3 class="heading">Đăng ký thành viên</h3>
+          <div class="spacer"></div>
+
+        <div class="input-box">
+          <label for="email" class="form-label">Email</label>
+          <input type="text" placeholder="VD: email@domain"id ="email" class="form-control"> 
+            <i class='bx bxl-gmail' ></i>
+            <span class="form-message"></span>
+
+        </div>
+        <div class="input-box">
+          <label for="username" class="form-label">Username</label>
+          <input type="text" placeholder="VD: User123" id="username" class="form-control">
+            <i class='bx bxs-user' ></i>
+            <span class="form-message"></span>
+
+        </div>
+        <div class="input-box">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" placeholder="VD: Linh123 " id="password" class="form-control">
+            <i class='bx bxs-lock-alt'></i>
+            <h6>Mật khẩu ít nhất 6 kí tự: Số, chữ in thường, chữ in hoa</h6>
+            <span class="form-message"></span>
+
+        </div>
+        
+        <button id="btnRegister">Sign in</button>
+        <div id ="login-link">
+            <p>You already have an account. <a href="../login/login.html">Login here</a></p>
+        </div>
+    </form>
+    </div>
+      <script src="register.js"></script>
+</body>
+</html>

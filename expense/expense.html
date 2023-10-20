@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Final/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <nav>
+            
+        <input id="nav-toggle" type="checkbox">
+        <div class="logo">Track<strong>ee
+            
+                <!-- <img src="images/logo.png" width="190px"> -->
+            
+        </strong></div>
+        <a href="index.html" class="header-logo">
+            <!-- <img src="images/logo.png" width="0px"> -->
+        </a>
+        <ul class="links">
+            <li class="link"><a href="/Final/index.html">Home</a></li>
+
+            <li><a href="">Time management </a></li>
+            <li><a href="expense/expense.html">Expense Tracker</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="login/login.html">Account</a></li>  
+
+            
+            
+        </ul>
+        
+    </nav>
+    <div class="bottom-box">
+        <div class="budget__numbers">
+            <div id="earned" class="number">
+                <small>Money Earned</small>
+                <div class="amount__container">
+                    
+                    <span id="earned__symbol"></span>
+                </div>
+            </div>
+            <div id="available" class="number">
+                <small>Money Available</small>
+                <div class="amount__container">
+                    <p>$</p>
+                    <span id="amount__available"></span>
+                </div>
+            </div>
+            <div id="spent" class="number">
+                <small>Money Spent</small>
+                <div class="amount__container">
+                    
+                    <span id="spent__symbol"></span>
+                </div>
+            </div>
+        </div>
+        
+
+        <form action="" class="create-form">
+            <div class="input__area">
+                
+                    
+                    <input type="date" id="date" name="date">    
+                
+                
+                    
+                    <input type="text" name= "description" id="description" placeholder="Description">
+                
+            
+                
+                    
+                    <input type="text" name= "cost" id="cost" placeholder="Cost">
+                
+            </div>
+            
+        <div >
+            <button id="createIncomes">Create Income</button>
+            <button id="createExpenses">Create Expense</button>
+            
+        </div>
+        </form>
+    </div>
+    <section class="banner" id="banner">
+        
+        
+        <div class=" float incomesForm">
+            <ul id="list-incomes">
+                
+            </ul>
+        </div>
+        <div class="float expensesForm">
+            <ul id="list-expenses">
+                
+            </ul>
+        </div>
+        
+        <h1 id="demo"></h1>
+        
+ 
+    </section>
+        
+    
+    
+    
+    <script src="expense.js"></script>
+</body>
+</html>

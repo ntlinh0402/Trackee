@@ -1,0 +1,54 @@
+{
+  "expenses": [
+    {
+      "date": "2023-10-21",
+      "description": "bánh kẹo",
+      "cost": "600",
+      "id": 12
+    },
+    {
+      "date": "2023-10-05",
+      "description": "mua thuốc",
+      "cost": "55",
+      "id": 14
+    },
+    {
+      "date": "2023-10-04",
+      "description": "mua trà sữa",
+      "cost": "70",
+      "id": 15
+    },
+    {
+      "date": "2023-10-05",
+      "description": "mua trà sữa",
+      "cost": "50",
+      "id": 16
+    }
+  ],
+  "incomes": [
+    {
+      "date": "2023-10-05",
+      "description": "mua thuốc",
+      "cost": "55",
+      "id": 14
+    },
+    {
+      "date": "2023-10-04",
+      "description": "mua trà sữa",
+      "cost": "70",
+      "id": 15
+    },
+    {
+      "date": "2023-10-05",
+      "description": "mua trà sữa",
+      "cost": "50",
+      "id": 16
+    },
+    {
+      "date": "2023-10-03",
+      "description": "đi dạy học",
+      "cost": "200",
+      "id": 17
+    }
+  ]
+}
