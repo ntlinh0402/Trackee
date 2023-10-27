@@ -6,7 +6,6 @@ $pink:#ffcccc;
 $green:#BEE5B0;
 $darkgreen:#106e03;
 $brightgreen:#86fc2f;
-$red:#bc4749;
 
 *{
     // box-sizing: border-box;
@@ -14,18 +13,11 @@ $red:#bc4749;
     padding: 0;
 }
 
-
-
-
-
-@import "register";
-@import "expense";
+@import "banner";
 @import "header";
-@import "taskManager"
+@import "global";
+@import "plusbanner";
+@import "card";
 
-
-
-
-
-
+@import "contact";
 

@@ -6,7 +6,10 @@ login.addEventListener("submit",(e)=>{
     let pass = document.getElementById("password");
     for(let index = 0; index<user.length; index++){
         if (username.value.trim()==user[index].username && pass.value.trim()==user[index].pass){
-            window.location.href = "../index.html"
+            window.location.href = "../Home/index.html"
         }
+        
+        
+        
     }
 })

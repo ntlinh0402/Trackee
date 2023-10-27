@@ -56,6 +56,7 @@ body{
     text-align: center;
   }
 }
+
 .input__area {
   justify-content: space-between;
   display: flex;
@@ -125,8 +126,11 @@ i {
       opacity: 1;
   }
 }
-.deleteBtn{
+#deleteBtn{
   border: none;
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
 }
 .budget__numbers{
   display: flex;
@@ -152,8 +156,6 @@ i {
 
 
 ////////
-#add__income{background-color: $green}
-#add__expense{background-color: var(--red);}
 .budget__numbers{
   
   position: relative;
@@ -162,4 +164,74 @@ i {
 }
 .budget__numbers{
 justify-content: space-between;
+}
+
+
+#createIncomes, .buttons__area #createExpenses {
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 15px;
+  outline: none;
+  cursor: pointer;
+  
+}
+.buttons__area:hover{
+  font-size: px;
+}
+#createIncomes {
+  background-color: #43aa8b;
+  
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#createExpenses {
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 15px;
+  outline: none;
+  cursor: pointer;
+  margin-left: 20px;
+
+}
+#createExpenses {
+  background-color: #bc4749;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.btn-container{
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.items__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 70%;
+  max-width: 700px;
+}
+#items-container{
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+}
+.far {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+.number{
+  font-size: 15px;
 }

@@ -109,10 +109,20 @@ function totalExpenses(expenses){
     const totalSpent = htmls.reduce((total, currentNum) => total + currentNum)
 
 document.getElementById('spent__symbol').innerHTML=totalSpent
-localStorage.setItem('spent', totalSpent)
+localStorage.setItem('totalSpent', totalSpent)
 }
 
+localStorage.setItem('totalSpent', totalSpent)
+console.log(totalSpent)
 
+
+function moneySpent(){
+    
+    var earn = localStorage.getItem("totalEarned")
+    console.log(earn)
+    //try
+    
+}
 
 
 
@@ -212,24 +222,24 @@ function totalIncomes(incomes){
     const totalEarned = htmls.reduce((total, currentNum) => total + currentNum)
  
 document.getElementById('earned__symbol').innerHTML=totalEarned
-console.log(totalEarned)
 localStorage.setItem('totalEarned', totalEarned)
     
 }
 
+
+
+
+
 function moneyAvailable(){
-    
-    var earn = localStorage.getItem("totalEarned")
-console.log(earn)
-    //try
-    
+ var earned =localStorage.getItem("totalEarned")
+ console.log(earned)
+ var spent =localStorage.getItem("totalSpent")
+ console.log(spent)
+ var moneyAvailable = earned - spent
+ console.log(moneyAvailable)
+ document.getElementById('amount__available').innerHTML=moneyAvailable
+localStorage.setItem('amount__available', moneyAvailable)
 }
-window.onload=function(){/*from   w  w w .  ja v  a 2s.  c  om*/
-console.log(localStorage.getItem(spent))
-}
-
-
-
 
 
 

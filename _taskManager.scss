@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
+
+:root{
+  --ff:'Poppins', sans-serif;
+  
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: $green;
+  min-height: 100vh;
+  overflow: hidden;
+  font-family: var(--ff);
+}
+
+main{
+  width: 100vw;
+  margin: 0 auto;
+  max-width: 70rem;
+  margin-top: 2rem;
+  background: rgba(19, 104, 33, 0.2);
+  
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 1em;
+  padding: 1.2rem 2rem 1.8rem;
+}
+
+/* alert */
+.alert{
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  padding: .5rem 0;
+  border-radius: .25rem;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+}
+/* JS classes */
+.alert-danger {
+  color: #c0111f;
+  background-color: #f78d96;
+}
+.alert-success {
+  color: #0daa61;
+  background-color: #bce5d3;
+}
+
+/* todo box */
+.title{
+  text-align: center;
+  margin-bottom: .7rem;
+  font-size: 25px;
+}
+.control{
+  display: flex;
+  justify-content: center;
+}
+
+#entry{
+  outline: none;
+  border: 1px solid #eee;
+  background: #eee;
+  color: #222;
+  border-radius: 0.5rem 0 0 0.5rem;
+  font-size: 2rem;
+  padding: 0.3rem 0.7rem;
+  flex: 1;
+  font-family: var(--ff);
+}
+.btn{
+  font-family: var(--ff);
+  font-weight: bold;
+}
+.submit-btn,.cancel-btn{
+  outline: none;
+  border: 1px solid #eee;
+  background-color: $darkgreen;
+  color: #eee;
+  font-size: 2rem;
+  padding: 0.3rem 0.7rem;
+  flex: 0 0 .5rem;
+  cursor: pointer;
+  transition: background-color .2s,
+              color .2s;
+}
+.submit-btn:hover,
+.cancel-btn:hover{
+  background-color: #222;
+  color: #eee;
+}
+
+/* todo list*/
+.list-container{
+  margin-top: 2rem;
+}
+
+.list-item{
+  border-bottom:1px solid #eee;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5rem .9rem .5rem .4rem;
+  font-size: 1.7rem;
+  color: black;
+}
+.text{
+  width: 100%;
+}
+
+.bx{
+
+  cursor: pointer;
+  margin: 0 5px;
+  
+  
+    
+  
+  
+  
+}
+i{
+    font-size: larger;
+}
+/* Js action - checkitem function */
+li.liChecked .text{
+  text-decoration: line-through;
+}
+li.liChecked .bx.bxs-edit{
+  visibility: hidden;
+}
+
+.bx.bxs-edit:hover{
+    color:#43c1fc;
+}
+.bx.bx-check:hover{color:#39ec99;}
+.bx.bxs-trash:hover{color:#ec3948;}
+.clear-btn:hover{
+    background-color: #222;
+}
+.clear-btn{
+  border:none;
+  outline: none;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  padding: 0.3rem 0.2rem;
+  cursor: pointer;
+
+  color: #eee;
+  background-color: $darkgreen;
+
+  width: 12rem;
+  display: block;
+  margin: 1.2rem auto 0;
+}
+
+/* JS CLASSES*/
+.v-none{
+  visibility: hidden ;
+}
+.d-none{
+  display: none;
+}
+.bx-sm {
+    font-size: 2.55rem!important
+}
+

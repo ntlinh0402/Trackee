@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/Final/style.css">
+    <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <body>
@@ -20,12 +20,12 @@
             <!-- <img src="images/logo.png" width="0px"> -->
         </a>
         <ul class="links">
-            <li class="link"><a href="/Final/index.html">Home</a></li>
+            <li class="link"><a href="/Home/index.html">Home</a></li>
 
-            <li><a href="">Time management </a></li>
-            <li><a href="expense/expense.html">Expense Tracker</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="login/login.html">Account</a></li>  
+            <li><a href="/taskManager/index.html">Task Tracker</a></li>
+            <li><a href="/expense/expense.html">Expense Tracker</a></li>
+            <li><a href="/Home/index.html#contact">Contact</a></li>
+            <li><a href="/login/login.html">Account</a></li>  
 
             
             
@@ -44,7 +44,7 @@
             <div id="available" class="number">
                 <small>Money Available</small>
                 <div class="amount__container">
-                    <p>$</p>
+                    
                     <span id="amount__available"></span>
                 </div>
             </div>
@@ -75,28 +75,30 @@
                 
             </div>
             
-        <div >
-            <button id="createIncomes">Create Income</button>
-            <button id="createExpenses">Create Expense</button>
+        <div class="btn-container">
+            <button class="buttons__area" id="createIncomes" class="">Create Income</button>
+            <button class="buttons__area" id="createExpenses">Create Expense</button>
             
         </div>
         </form>
     </div>
-    <section class="banner" id="banner">
+    <section class="banner" id="items-container">
         
         
         <div class=" float incomesForm">
+            <h2>Income</h2>
             <ul id="list-incomes">
                 
             </ul>
         </div>
         <div class="float expensesForm">
+            <h2>Expense</h2>
+
             <ul id="list-expenses">
                 
             </ul>
         </div>
         
-        <h1 id="demo"></h1>
         
  
     </section>
